@@ -1,6 +1,6 @@
 'use client'
 
-import GridPattern from '@echo/ui/components/ui/GridPattern.tsx'
+import GridPattern from '@echo/ui/components/ui/GridPattern'
 import { cn } from '@echo/utils/src'
 import { Ellipsis, ShieldIcon } from 'lucide-react'
 
