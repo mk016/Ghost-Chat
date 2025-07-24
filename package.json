@@ -2,15 +2,15 @@
   "name": "Echo-Chat",
   "private": true,
   "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
-    "lint": "turbo lint",
+    "build": "cd apps/www && npm install && npm run build",
+    "dev": "cd apps/www && npm install && npm run dev",
+    "lint": "cd apps/www && npm run lint",
     "prepare": "husky install",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,mdx,json,html}'",
     "type-check": "tsc --noEmit",
-    "test": "pnpm test",
-    "start": "turbo start",
+    "test": "npm test",
+    "start": "cd apps/www && npm start",
     "commitlint": "commitlint --edit"
   },
   "devDependencies": {
@@ -23,18 +23,12 @@
     "turbo": "^2.2.3",
     "typescript": "5.5.4"
   },
-  "packageManager": "pnpm@8.15.9+sha256.daa27a0b541bc635323ff96c2ded995467ff9fe6d69ff67021558aa9ad9dcc36",
   "engines": {
     "node": ">=18"
   },
   "lint-staged": {
-  
     "packages/utils/**/*.{js,ts}": [
       "eslint --fix"
     ]
-  },
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+  }
 }

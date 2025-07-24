@@ -11,10 +11,10 @@
   "dependencies": {
     "@clerk/nextjs": "^6.25.5",
     "@clerk/themes": "^2.4.0",
-    "@echo/lib": "workspace:*",
-    "@echo/tailwind-config": "workspace:*",
-    "@echo/ui": "workspace:*",
-    "@echo/utils": "workspace:*",
+    "@echo/lib": "file:../../packages/lib",
+    "@echo/tailwind-config": "file:../../packages/tailwind-config",
+    "@echo/ui": "file:../../packages/ui",
+    "@echo/utils": "file:../../packages/utils",
     "@emoji-mart/data": "^1.2.1",
     "@emoji-mart/react": "^1.1.1",
     "@hookform/resolvers": "^3.9.1",
@@ -41,8 +41,8 @@
     "zustand": "^5.0.1"
   },
   "devDependencies": {
-    "@echo/eslint-config": "workspace:*",
-    "@echo/typescript-config": "workspace:*",
+    "@echo/eslint-config": "file:../../packages/eslint-config",
+    "@echo/typescript-config": "file:../../packages/typescript-config",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
