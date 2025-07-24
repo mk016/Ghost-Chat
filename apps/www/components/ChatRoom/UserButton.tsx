@@ -4,7 +4,7 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from '@echo/ui/components/ui/avatar.tsx'
+} from '@echo/ui/components/ui/avatar'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -12,7 +12,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from '@echo/ui/components/ui/dropdown-menu.tsx'
+} from '@echo/ui/components/ui/dropdown-menu'
 import { Sparkles } from 'lucide-react'
 
 import Downitem from '../Downitem'

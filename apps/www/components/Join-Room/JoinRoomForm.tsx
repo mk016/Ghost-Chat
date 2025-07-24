@@ -1,6 +1,6 @@
 'use client'
-import { Input } from '@echo/ui/components/ui/input.tsx'
-import { Label } from '@echo/ui/components/ui/label.tsx'
+import { Input } from '@echo/ui/components/ui/input'
+import { Label } from '@echo/ui/components/ui/label'
 import { Hash } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'

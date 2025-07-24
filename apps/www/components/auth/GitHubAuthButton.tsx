@@ -1,6 +1,6 @@
 'use client'
 
-import { Button } from '@echo/ui/components/ui/button.tsx'
+import { Button } from '@echo/ui/components/ui/button'
 import { useRouter } from 'next/navigation'
 
 import { useAuthStore } from '@/lib/store/auth-store'

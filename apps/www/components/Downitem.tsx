@@ -1,6 +1,6 @@
 'use client'
 
-import { DropdownMenuItem } from '@echo/ui/components/ui/dropdown-menu.tsx'
+import { DropdownMenuItem } from '@echo/ui/components/ui/dropdown-menu'
 import { useRouter } from 'next/navigation'
 import React, { useState } from 'react'
 

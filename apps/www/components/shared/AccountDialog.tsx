@@ -1,14 +1,14 @@
 'use client'
 
-import { Button } from '@echo/ui/components/ui/button.tsx'
+import { Button } from '@echo/ui/components/ui/button'
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from '@echo/ui/components/ui/dialog.tsx'
-import { ScrollArea } from '@echo/ui/components/ui/scroll-area.tsx'
+} from '@echo/ui/components/ui/dialog'
+import { ScrollArea } from '@echo/ui/components/ui/scroll-area'
 import {
   Sidebar,
   SidebarContent,
@@ -19,8 +19,8 @@ import {
   SidebarMenuItem,
   SidebarMenuButton,
   SidebarProvider,
-} from '@echo/ui/components/ui/sidebar.tsx'
-import { LoadingSpinner } from '@echo/ui/icons/spinner.tsx'
+} from '@echo/ui/components/ui/sidebar'
+import { LoadingSpinner } from '@echo/ui/icons/spinner'
 import { User } from 'lucide-react'
 import { useState } from 'react'
 

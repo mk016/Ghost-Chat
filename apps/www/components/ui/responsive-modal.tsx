@@ -4,8 +4,8 @@ import {
   Dialog,
   DialogContent,
   DialogTitle,
-} from '@echo/ui/components/ui/dialog.tsx'
-import { Drawer, DrawerContent } from '@echo/ui/components/ui/drawer.tsx'
+} from '@echo/ui/components/ui/dialog'
+import { Drawer, DrawerContent } from '@echo/ui/components/ui/drawer'
 import * as VisuallyHidden from '@radix-ui/react-visually-hidden'
 
 import { useMediaQuery } from '@/hooks/use-media-query'

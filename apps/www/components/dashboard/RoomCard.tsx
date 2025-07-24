@@ -3,20 +3,20 @@ import {
   Avatar,
   AvatarImage,
   AvatarFallback,
-} from '@echo/ui/components/ui/avatar.tsx'
-import { Button } from '@echo/ui/components/ui/button.tsx'
-import { Card, CardContent, CardFooter } from '@echo/ui/components/ui/card.tsx'
+} from '@echo/ui/components/ui/avatar'
+import { Button } from '@echo/ui/components/ui/button'
+import { Card, CardContent, CardFooter } from '@echo/ui/components/ui/card'
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from '@echo/ui/components/ui/dropdown-menu.tsx'
+} from '@echo/ui/components/ui/dropdown-menu'
 import {
   HoverCard,
   HoverCardTrigger,
   HoverCardContent,
-} from '@echo/ui/components/ui/hover-card.tsx'
+} from '@echo/ui/components/ui/hover-card'
 import { Hash, MoreHorizontal } from 'lucide-react'
 
 import { useTimeLeft } from '@/hooks/useTimeLeft'

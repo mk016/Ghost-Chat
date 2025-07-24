@@ -1,4 +1,4 @@
-import { LoadingSpinner } from '@echo/ui/icons/spinner.tsx'
+import { LoadingSpinner } from '@echo/ui/icons/spinner'
 
 export default function Loading() {
   return (

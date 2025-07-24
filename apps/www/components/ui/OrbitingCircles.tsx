@@ -1,4 +1,4 @@
-import { cn } from '@echo/utils/src'
+import { cn } from '@echo/utils'
 
 export interface OrbitingCirclesProps {
   className?: string

@@ -1,7 +1,7 @@
 'use client'
 
-import { Button } from '@echo/ui/components/ui/button.tsx'
-import { CardStack } from '@echo/ui/components/ui/CardStack.tsx'
+import { Button } from '@echo/ui/components/ui/button'
+import { CardStack } from '@echo/ui/components/ui/CardStack'
 import Link from 'next/link'
 
 import { UserStats } from '@/types'

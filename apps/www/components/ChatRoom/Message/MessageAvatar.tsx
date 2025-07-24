@@ -2,8 +2,8 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from '@echo/ui/components/ui/avatar.tsx'
-import { LoadingSpinner } from '@echo/ui/icons/spinner.tsx'
+} from '@echo/ui/components/ui/avatar'
+import { LoadingSpinner } from '@echo/ui/icons/spinner'
 
 type MessageAvatarProps = {
   avatar: string

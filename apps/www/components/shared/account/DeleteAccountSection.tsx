@@ -6,8 +6,8 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from '@echo/ui/components/ui/dialog.tsx'
-import { Input } from '@echo/ui/components/ui/input.tsx'
+} from '@echo/ui/components/ui/dialog'
+import { Input } from '@echo/ui/components/ui/input'
 import { useQueryClient } from '@tanstack/react-query'
 import { useRouter } from 'next/navigation'
 import { useAction } from 'next-safe-action/hooks'

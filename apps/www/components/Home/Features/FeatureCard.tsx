@@ -1,4 +1,4 @@
-import { cn } from '@echo/utils/src'
+import { cn } from '@echo/utils'
 import { useState } from 'react'
 
 interface FeatureCardProps {

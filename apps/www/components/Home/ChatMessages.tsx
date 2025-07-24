@@ -1,6 +1,6 @@
 'use client'
 
-import { cn } from '@echo/utils/src'
+import { cn } from '@echo/utils'
 import { motion, useInView } from 'framer-motion'
 import Image from 'next/image'
 import React, { useRef } from 'react'

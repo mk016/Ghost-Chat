@@ -8,7 +8,7 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-} from '@echo/ui/components/ui/sidebar.tsx'
+} from '@echo/ui/components/ui/sidebar'
 
 import EchoLogo from '../icons/animated/EchoLogo'
 import { History } from '../icons/animated/History'

@@ -4,7 +4,7 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from '@echo/ui/components/ui/avatar.tsx'
+} from '@echo/ui/components/ui/avatar'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -12,11 +12,11 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from '@echo/ui/components/ui/dropdown-menu.tsx'
+} from '@echo/ui/components/ui/dropdown-menu'
 import {
   SidebarMenuButton,
   useSidebar,
-} from '@echo/ui/components/ui/sidebar.tsx'
+} from '@echo/ui/components/ui/sidebar'
 import { Sparkles } from 'lucide-react'
 
 import { useUser } from '@/hooks/useSession'

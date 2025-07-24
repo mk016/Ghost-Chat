@@ -1,5 +1,5 @@
-import { Button } from '@echo/ui/components/ui/button.tsx'
-import { Input } from '@echo/ui/components/ui/input.tsx'
+import { Button } from '@echo/ui/components/ui/button'
+import { Input } from '@echo/ui/components/ui/input'
 import { Copy } from 'lucide-react'
 import { toast } from 'sonner'
 

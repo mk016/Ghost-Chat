@@ -1,6 +1,6 @@
 'use client'
 
-import { Button } from '@echo/ui/components/ui/button.tsx'
+import { Button } from '@echo/ui/components/ui/button'
 import { useGoogleLogin } from '@react-oauth/google'
 import { useRouter } from 'next/navigation'
 import { useAction } from 'next-safe-action/hooks'

@@ -1,4 +1,4 @@
-import { Button } from '@echo/ui/components/ui/button.tsx'
+import { Button } from '@echo/ui/components/ui/button'
 import Link from 'next/link'
 
 const PremiumBox = () => {

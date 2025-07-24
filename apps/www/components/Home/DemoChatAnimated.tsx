@@ -1,7 +1,7 @@
 'use client'
 
 import GridPattern from '@echo/ui/components/ui/GridPattern'
-import { cn } from '@echo/utils/src'
+import { cn } from '@/lib/cn'
 import { Ellipsis, ShieldIcon } from 'lucide-react'
 
 import BlurFadeIn from '../ui/BlurFadeIn'

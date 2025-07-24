@@ -4,16 +4,16 @@ import {
   Avatar,
   AvatarImage,
   AvatarFallback,
-} from '@echo/ui/components/ui/avatar.tsx'
-import { Badge } from '@echo/ui/components/ui/badge.tsx'
-import { Button } from '@echo/ui/components/ui/button.tsx'
-import { Card, CardContent, CardFooter } from '@echo/ui/components/ui/card.tsx'
+} from '@echo/ui/components/ui/avatar'
+import { Badge } from '@echo/ui/components/ui/badge'
+import { Button } from '@echo/ui/components/ui/button'
+import { Card, CardContent, CardFooter } from '@echo/ui/components/ui/card'
 import {
   HoverCard,
   HoverCardTrigger,
   HoverCardContent,
-} from '@echo/ui/components/ui/hover-card.tsx'
-import { Separator } from '@echo/ui/components/ui/separator.tsx'
+} from '@echo/ui/components/ui/hover-card'
+import { Separator } from '@echo/ui/components/ui/separator'
 import {
   CalendarIcon,
   Hash,

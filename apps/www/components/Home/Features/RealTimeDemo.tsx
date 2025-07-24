@@ -1,6 +1,6 @@
 'use client'
 
-import { cn } from '@echo/utils/src'
+import { cn } from '@echo/utils'
 import { User } from 'lucide-react'
 import Image from 'next/image'
 import React, { forwardRef, useRef } from 'react'

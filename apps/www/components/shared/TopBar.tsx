@@ -1,7 +1,7 @@
 'use client'
 
-import { Separator } from '@echo/ui/components/ui/separator.tsx'
-import { SidebarTrigger } from '@echo/ui/components/ui/sidebar.tsx'
+import { Separator } from '@echo/ui/components/ui/separator'
+import { SidebarTrigger } from '@echo/ui/components/ui/sidebar'
 import { usePathname } from 'next/navigation'
 
 import { NavUser } from '../Root-user'

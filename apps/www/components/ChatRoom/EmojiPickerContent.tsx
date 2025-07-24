@@ -1,6 +1,6 @@
 'use client'
 
-import { Button } from '@echo/ui/components/ui/button.tsx'
+import { Button } from '@echo/ui/components/ui/button'
 import Picker from '@emoji-mart/react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Plus } from 'lucide-react'

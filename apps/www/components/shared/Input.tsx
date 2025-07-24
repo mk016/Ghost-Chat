@@ -1,4 +1,4 @@
-import { cn } from '@echo/utils/src'
+import { cn } from '@echo/utils'
 import { AlertCircle, Eye, EyeClosed } from 'lucide-react'
 import React, { useCallback, useState } from 'react'
 

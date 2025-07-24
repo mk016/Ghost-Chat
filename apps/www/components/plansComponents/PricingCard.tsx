@@ -1,7 +1,5 @@
 'use client'
 
-import { Card } from '@echo/ui/components/ui/card.tsx'
-import { Separator } from '@echo/ui/components/ui/separator.tsx'
 import { motion } from 'framer-motion'
 import React from 'react'
 
@@ -11,6 +9,18 @@ import { Badge } from './Badge'
 import { Feature } from './Feature'
 import { IconWrapper } from './IconWrapper'
 import { PricingCardButton } from './PricingCardButton'
+
+// Simple Card component
+const Card = ({ children, className, ...props }: React.HTMLAttributes<HTMLDivElement>) => (
+  <div className={className} {...props}>
+    {children}
+  </div>
+)
+
+// Simple Separator component
+const Separator = ({ className }: { className?: string }) => (
+  <div className={`h-px bg-gray-200 ${className || ''}`} />
+)
 
 export function PricingCard({
   name,

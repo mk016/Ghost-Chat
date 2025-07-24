@@ -4,7 +4,7 @@ import {
   InputOTPGroup,
   InputOTPSlot,
   InputOTPSeparator,
-} from '@echo/ui/components/ui/input-otp.tsx'
+} from '@echo/ui/components/ui/input-otp'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { useAction } from 'next-safe-action/hooks'

@@ -6,7 +6,7 @@ import {
   TableBody,
   TableRow,
   TableCell,
-} from '@echo/ui/components/ui/table.tsx'
+} from '@echo/ui/components/ui/table'
 
 import { RoomWithParticipants } from '@/types'
 

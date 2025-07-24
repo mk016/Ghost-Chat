@@ -1,13 +1,13 @@
 'use client'
 
-import { Button } from '@echo/ui/components/ui/button.tsx'
+import { Button } from '@echo/ui/components/ui/button'
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from '@echo/ui/components/ui/tooltip.tsx'
-import { LoadingSpinner } from '@echo/ui/icons/spinner.tsx'
+} from '@echo/ui/components/ui/tooltip'
+import { LoadingSpinner } from '@echo/ui/icons/spinner'
 import { X } from 'lucide-react'
 import Image from 'next/image'
 import { useAction } from 'next-safe-action/hooks'

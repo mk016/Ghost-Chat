@@ -1,6 +1,6 @@
 'use client'
 
-import { cn } from '@echo/utils/src'
+import { cn } from '@echo/utils'
 
 interface EchoLoadingProps {
   className?: string

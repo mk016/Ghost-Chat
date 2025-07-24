@@ -4,8 +4,8 @@ import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from '@echo/ui/components/ui/popover.tsx'
-import { LoadingSpinner } from '@echo/ui/icons/spinner.tsx'
+} from '@echo/ui/components/ui/popover'
+import { LoadingSpinner } from '@echo/ui/icons/spinner'
 import data from '@emoji-mart/data'
 import Picker from '@emoji-mart/react'
 import { Suspense, useState } from 'react'

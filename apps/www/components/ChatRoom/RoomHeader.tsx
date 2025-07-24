@@ -1,4 +1,4 @@
-import { LoadingSpinner } from '@echo/ui/icons/spinner.tsx'
+import { LoadingSpinner } from '@echo/ui/icons/spinner'
 import { AudioLines } from 'lucide-react'
 
 import { UserButton } from '@/components/ChatRoom/UserButton'

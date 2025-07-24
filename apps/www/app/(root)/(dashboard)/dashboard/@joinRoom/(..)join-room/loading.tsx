@@ -1,4 +1,4 @@
-import { LoadingSpinner as Spinner } from '@echo/ui/icons/spinner.tsx'
+import { LoadingSpinner as Spinner } from '@echo/ui/icons/spinner'
 
 const loading = () => {
   return (

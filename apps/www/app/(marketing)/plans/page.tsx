@@ -1,7 +1,7 @@
 'use client'
 
-import GridPattern from '@echo/ui/components/ui/GridPattern.tsx'
-import { cn } from '@echo/utils/src'
+import GridPattern from '@echo/ui/components/ui/GridPattern'
+import { cn } from '@echo/utils'
 import { motion } from 'framer-motion'
 
 

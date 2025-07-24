@@ -1,7 +1,7 @@
 import {
   SidebarInset,
   SidebarProvider,
-} from '@echo/ui/components/ui/sidebar.tsx'
+} from '@echo/ui/components/ui/sidebar'
 
 import { AppSidebar } from '@/components/shared/app-sidebar'
 import { TopBar } from '@/components/shared/TopBar'

@@ -1,6 +1,6 @@
 'use client'
 
-import { Input } from '@echo/ui/components/ui/input.tsx'
+import { Input } from '@echo/ui/components/ui/input'
 import { useQueryClient } from '@tanstack/react-query'
 import { useAction } from 'next-safe-action/hooks'
 import { useState } from 'react'

@@ -4,12 +4,12 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from '@echo/ui/components/ui/avatar.tsx'
+} from '@echo/ui/components/ui/avatar'
 import {
   HoverCard,
   HoverCardTrigger,
   HoverCardContent,
-} from '@echo/ui/components/ui/hover-card.tsx'
+} from '@echo/ui/components/ui/hover-card'
 import { CalendarIcon, TimerIcon } from 'lucide-react'
 
 import { UsersIcon } from '@/components/icons/animated/users'

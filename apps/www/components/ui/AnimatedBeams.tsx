@@ -1,6 +1,6 @@
 'use client'
 
-import { cn } from '@echo/utils/src'
+import { cn } from '@echo/utils'
 import { motion } from 'framer-motion'
 import { RefObject, useEffect, useId, useState } from 'react'
 
