@@ -11,7 +11,7 @@ import {
   DialogTrigger,
 } from '@echo/ui/components/ui/dialog.tsx'
 import { AlertCircle, Trash2 } from 'lucide-react'
-import { revalidatePath } from 'next/cache'
+import { useRouter } from 'next/navigation'
 import { useAction } from 'next-safe-action/hooks'
 import { useState } from 'react'
 import { toast } from 'sonner'
@@ -32,6 +32,8 @@ export function DeleteRoomDialog({
   trigger,
 }: DeleteRoomDialogProps) {
   const [open, setOpen] = useState(false)
+  const router = useRouter()
+  
   const { execute, isExecuting } = useAction(deleteRoom, {
     onExecute: () => {
       toast.loading('Deleting room history...', { id: 'delete-room' })
@@ -40,7 +42,7 @@ export function DeleteRoomDialog({
       toast.success('Room history deleted successfully', { id: 'delete-room' })
       onDelete(roomId)
       setOpen(false)
-      revalidatePath('/history')
+      router.refresh()
     },
     onError: (error) => {
       console.error('Failed to delete room:', error)
@@ -98,24 +100,20 @@ export function DeleteRoomDialog({
             </div>
           </DialogDescription>
         </DialogHeader>
-        <DialogFooter className="w-full gap-2 sm:gap-0">
+        <DialogFooter>
           <Button
-            type="button"
             variant="outline"
-            className="flex-1 text-xs hover:bg-neutral-50 md:text-sm"
             onClick={() => setOpen(false)}
             disabled={isExecuting}
           >
             Cancel
           </Button>
           <Button
-            type="button"
             variant="destructive"
             onClick={handleDelete}
-            className="flex-1 bg-red-600 text-xs hover:bg-red-700 md:text-sm"
             disabled={isExecuting}
           >
-            {isExecuting ? 'Deleting...' : 'Delete Room'}
+            {isExecuting ? 'Deleting...' : 'Delete'}
           </Button>
         </DialogFooter>
       </DialogContent>
