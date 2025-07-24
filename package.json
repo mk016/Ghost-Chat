@@ -6,12 +6,16 @@
     "dev": "cd apps/www && npm install && npm run dev",
     "lint": "cd apps/www && npm run lint",
     "prepare": "husky install",
+    "postinstall": "cd packages/lib && npm install",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,mdx,json,html}'",
     "type-check": "tsc --noEmit",
     "test": "npm test",
     "start": "cd apps/www && npm start",
     "commitlint": "commitlint --edit"
+  },
+  "dependencies": {
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
