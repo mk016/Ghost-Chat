@@ -8,11 +8,16 @@
     ".": {
       "types": "./src/index.ts",
       "default": "./src/index.ts"
+    },
+    "./validations/*": {
+      "types": "./src/validations/*.ts",
+      "default": "./src/validations/*.ts"
     }
   },
   "scripts": {
     "lint": "eslint .",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "build": "tsc"
   },
   "dependencies": {
     "zod": "^3.22.4"
