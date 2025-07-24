@@ -1,5 +1,5 @@
 {
-  "buildCommand": "cd apps/www && pnpm install && pnpm build",
+  "buildCommand": "pnpm install && pnpm build",
   "installCommand": "pnpm install",
   "framework": "nextjs",
   "outputDirectory": "apps/www/.next",
@@ -12,10 +12,10 @@
   "env": {
     "NODE_ENV": "production"
   },
-  "builds": [
+  "rewrites": [
     {
-      "src": "apps/www/package.json",
-      "use": "@vercel/next"
+      "source": "/(.*)",
+      "destination": "/apps/www/$1"
     }
   ]
 } 
