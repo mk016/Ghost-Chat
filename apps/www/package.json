@@ -19,7 +19,11 @@
     "zustand": "^5.0.1",
     "@emoji-mart/react": "^1.1.1",
     "@emoji-mart/data": "^1.2.1",
-    "qrcode.react": "^4.1.0"
+    "qrcode.react": "^4.1.0",
+    "next-safe-action": "^7.9.9",
+    "react-use-websocket": "^4.11.1",
+    "@echo/ui": "file:../../packages/ui",
+    "@echo/utils": "file:../../packages/utils"
   },
   "devDependencies": {
     "@types/node": "^20",
