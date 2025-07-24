@@ -1,21 +1,6 @@
 {
-  "buildCommand": "pnpm install && pnpm build",
-  "installCommand": "pnpm install",
   "framework": "nextjs",
-  "outputDirectory": "apps/www/.next",
-  "regions": ["iad1"],
-  "functions": {
-    "apps/www/app/api/**/*.ts": {
-      "maxDuration": 30
-    }
-  },
-  "env": {
-    "NODE_ENV": "production"
-  },
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/apps/www/$1"
-    }
-  ]
+  "buildCommand": "cd apps/www && npm install && npm run build",
+  "installCommand": "npm install",
+  "outputDirectory": "apps/www/.next"
 } 
