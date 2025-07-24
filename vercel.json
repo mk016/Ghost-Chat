@@ -1,0 +1,21 @@
+{
+  "buildCommand": "cd apps/www && pnpm install && pnpm build",
+  "installCommand": "pnpm install",
+  "framework": "nextjs",
+  "outputDirectory": "apps/www/.next",
+  "regions": ["iad1"],
+  "functions": {
+    "apps/www/app/api/**/*.ts": {
+      "maxDuration": 30
+    }
+  },
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "builds": [
+    {
+      "src": "apps/www/package.json",
+      "use": "@vercel/next"
+    }
+  ]
+} 
