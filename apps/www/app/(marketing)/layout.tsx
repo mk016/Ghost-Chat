@@ -1,16 +1,16 @@
-import Footer from '@/components/Home/Footer'
 import { NavBar } from '@/components/Home/NavBar'
+import Footer from '@/components/Home/Footer'
 
 export default function MarketingLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: any
 }) {
   return (
-    <div className="flex min-h-screen flex-col">
+    <>
       <NavBar />
-      <main className="grow">{children}</main>
+      {children}
       <Footer />
-    </div>
+    </>
   )
 }
