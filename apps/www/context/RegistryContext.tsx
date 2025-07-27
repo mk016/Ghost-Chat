@@ -1,59 +1,55 @@
 'use client'
 
-import React, { createContext, useContext, useState } from 'react'
+import { createContext, useContext, useState } from 'react'
 
-interface RegisterContextType {
-  email: string
-  password: string
-  firstName: string
-  lastName: string
-  step: 'signup' | 'verify'
-  setEmail: (email: string) => void
-  setPassword: (password: string) => void
-  setFirstName: (firstName: string) => void
-  setLastName: (lastName: string) => void
-  setStep: (step: 'signup' | 'verify') => void
+interface RegistryContextType {
+  isRegistered: boolean
+  setIsRegistered: (value: boolean) => void
+  tempUserId: string | null
+  setTempUserId: (value: string | null) => void
+  tempUserEmail: string | null
+  setTempUserEmail: (value: string | null) => void
+  tempUserName: string | null
+  setTempUserName: (value: string | null) => void
+  tempUserAvatar: string | null
+  setTempUserAvatar: (value: string | null) => void
 }
 
-const RegisterContext = createContext<RegisterContextType | undefined>(
-  undefined
-)
+const RegistryContext = createContext<RegistryContextType | undefined>(undefined)
 
-export const RegisterProvider: React.FC<{ children: React.ReactNode }> = ({
+export const useRegistry = () => {
+  const context = useContext(RegistryContext)
+  if (!context) {
+    throw new Error('useRegistry must be used within a RegisterProvider')
+  }
+  return context
+}
+
+export const RegisterProvider: React.FC<{ children: any }> = ({
   children,
 }) => {
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
-  const [firstName, setFirstName] = useState('')
-  const [lastName, setLastName] = useState('')
-  const [step, setStep] = useState<'signup' | 'verify'>('signup')
+  const [isRegistered, setIsRegistered] = useState(false)
+  const [tempUserId, setTempUserId] = useState<string | null>(null)
+  const [tempUserEmail, setTempUserEmail] = useState<string | null>(null)
+  const [tempUserName, setTempUserName] = useState<string | null>(null)
+  const [tempUserAvatar, setTempUserAvatar] = useState<string | null>(null)
 
   return (
-    <RegisterContext.Provider
+    <RegistryContext.Provider
       value={{
-        email,
-        password,
-        firstName,
-        lastName,
-        step,
-        setEmail,
-        setPassword,
-        setFirstName,
-        setLastName,
-        setStep,
+        isRegistered,
+        setIsRegistered,
+        tempUserId,
+        setTempUserId,
+        tempUserEmail,
+        setTempUserEmail,
+        tempUserName,
+        setTempUserName,
+        tempUserAvatar,
+        setTempUserAvatar,
       }}
     >
       {children}
-    </RegisterContext.Provider>
+    </RegistryContext.Provider>
   )
-}
-
-export const useRegisterContext = () => {
-  const context = useContext(RegisterContext)
-
-  if (context === undefined) {
-    throw new Error('useRegisterContext must be used within a RegisterProvider')
-  }
-
-  return context
 }

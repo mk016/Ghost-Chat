@@ -2,28 +2,45 @@
   "name": "@echo/ui",
   "version": "0.0.0",
   "private": true,
-  "main": "./src/index.ts",
-  "types": "./src/index.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "types": "./src/index.ts",
-      "default": "./src/index.ts"
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
     },
+    "./style.css": "./src/style.css",
     "./components/ui/*": {
-      "types": "./src/components/ui/*.tsx",
-      "default": "./src/components/ui/*.tsx"
+      "types": "./dist/components/ui/*.d.ts",
+      "default": "./dist/components/ui/*.js"
     },
-    "./components/ui/GridPattern": "./src/components/ui/GridPattern.tsx",
-    "./components/ui/card": "./src/components/ui/card.tsx",
-    "./components/ui/separator": "./src/components/ui/separator.tsx",
-    "./components/ui/dialog": "./src/components/ui/dialog.tsx",
-    "./components/ui/button": "./src/components/ui/button.tsx",
+    "./components/ui/GridPattern": {
+      "types": "./dist/components/ui/GridPattern.d.ts",
+      "default": "./dist/components/ui/GridPattern.js"
+    },
+    "./components/ui/card": {
+      "types": "./dist/components/ui/card.d.ts",
+      "default": "./dist/components/ui/card.js"
+    },
+    "./components/ui/separator": {
+      "types": "./dist/components/ui/separator.d.ts",
+      "default": "./dist/components/ui/separator.js"
+    },
+    "./components/ui/dialog": {
+      "types": "./dist/components/ui/dialog.d.ts",
+      "default": "./dist/components/ui/dialog.js"
+    },
+    "./components/ui/button": {
+      "types": "./dist/components/ui/button.d.ts",
+      "default": "./dist/components/ui/button.js"
+    },
     "./icons/*": {
-      "types": "./src/icons/*.tsx",
-      "default": "./src/icons/*.tsx"
+      "types": "./dist/icons/*.d.ts",
+      "default": "./dist/icons/*.js"
     }
   },
   "scripts": {
+    "build": "tsc",
     "lint": "eslint .",
     "type-check": "tsc --noEmit"
   },
@@ -52,7 +69,9 @@
     "@radix-ui/react-tooltip": "^1.1.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "framer-motion": "^11.11.17",
     "lucide-react": "^0.456.0",
+    "react-hook-form": "^7.53.2",
     "tailwind-merge": "^2.5.4",
     "tailwindcss-animate": "^1.0.7",
     "@echo/eslint-config": "file:../eslint-config",

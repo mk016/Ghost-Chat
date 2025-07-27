@@ -1,6 +1,6 @@
 'use client'
 
-import GridPattern from '@echo/ui/components/ui/GridPattern'
+import { GridPattern } from '@echo/ui'
 import { cn } from '@echo/utils'
 import { motion } from 'framer-motion'
 import Image from 'next/image'

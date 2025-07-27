@@ -49,7 +49,7 @@ const Footer = () => {
       viewport={{ once: true }}
       variants={containerVariants}
     >
-      <div className="container mx-auto px-4 py-12 sm:px-8 md:px-12 lg:px-20 lg:py-24">
+      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-24">
         <div className="flex flex-col space-y-12 lg:flex-row lg:items-start lg:justify-between lg:space-y-0">
           <motion.div 
             className="space-y-3"

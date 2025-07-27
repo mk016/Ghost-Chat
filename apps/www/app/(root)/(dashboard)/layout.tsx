@@ -1,3 +1,4 @@
+import React from 'react'
 import {
   SidebarInset,
   SidebarProvider,
@@ -9,7 +10,7 @@ import { TopBar } from '@/components/shared/TopBar'
 export default function DashboardLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: any
 }) {
   return (
     <div className="bg-neutral-100">

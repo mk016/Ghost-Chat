@@ -1,6 +1,6 @@
 /* eslint-disable import/no-unresolved */
 import './globals.css'
-import '@echo/ui/globals.css'
+import '@echo/ui/style.css'
 import { Analytics } from '@vercel/analytics/react'
 import { GeistMono } from 'geist/font/mono'
 import { GeistSans } from 'geist/font/sans'
@@ -52,9 +52,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+}: {
+  children: any
+}) {
   return (
     <html lang="en">
       <head>
@@ -76,6 +76,7 @@ export default function RootLayout({
         <link rel="image/png" href="/images/Ghost.png" />
       </head>
       <body
+        suppressHydrationWarning
         className={`${GeistSans.variable} ${GeistMono.variable} ${GeistSans.className} antialiased`}
       >
         <main>

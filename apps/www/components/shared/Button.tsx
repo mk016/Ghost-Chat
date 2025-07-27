@@ -1,10 +1,12 @@
 import { Button as Button2 } from '@echo/ui/components/ui/button'
 import { LoadingSpinner } from '@echo/ui/icons/spinner'
-import { ButtonHTMLAttributes, ReactNode } from 'react'
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  children: ReactNode
+interface ButtonProps {
+  children: any
   isLoading?: boolean
+  disabled?: boolean
+  className?: string
+  [key: string]: any
 }
 
 export const Button = ({

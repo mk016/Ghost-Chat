@@ -1,4 +1,4 @@
-import GridPattern from '@echo/ui/components/ui/GridPattern'
+import { GridPattern } from '@echo/ui'
 import { cn } from '@echo/utils'
 
 import { Message } from '@/types'

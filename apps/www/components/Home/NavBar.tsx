@@ -125,8 +125,10 @@ export const NavBar = () => {
 
   return (
     <div className="fixed inset-x-0 top-0 z-[100] w-full p-2">
-      <DesktopNav isScrolled={isScrolled} />
-      <MobileNav isScrolled={isScrolled} />
+      <div className="mx-auto max-w-7xl">
+        <DesktopNav isScrolled={isScrolled} />
+        <MobileNav isScrolled={isScrolled} />
+      </div>
     </div>
   )
 }

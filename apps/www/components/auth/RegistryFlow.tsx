@@ -1,17 +1,17 @@
 'use client'
 
-import { useRegisterContext } from '@/context/RegistryContext'
+import { useRegistry } from '@/context/RegistryContext'
 
 import SignupCard from './SignupCard'
 import VerifyEmailCard from './VerifyEmailCard'
 
 const RegistryFlow = () => {
-  const { step } = useRegisterContext()
+  const { isRegistered } = useRegistry()
 
   return (
     <div className="flex-center w-full">
-      {step === 'signup' && <SignupCard />}
-      {step === 'verify' && <VerifyEmailCard />}
+      {!isRegistered && <SignupCard />}
+      {isRegistered && <VerifyEmailCard />}
     </div>
   )
 }

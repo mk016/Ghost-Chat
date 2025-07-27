@@ -9,7 +9,7 @@ import PrivacyFeature from './Features/PrivacyFeature'
 const BentoSection = () => {
   return (
     <section className="py-24" id="features">
-      <div className="container px-2 md:px-4 lg:px-8 xl:px-12">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div
           className="flex flex-col items-center text-center"
           initial={{ opacity: 0, y: 20 }}

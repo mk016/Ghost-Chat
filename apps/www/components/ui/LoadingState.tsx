@@ -1,6 +1,6 @@
 'use client'
 
-import GridPattern from '@echo/ui/components/ui/GridPattern'
+import { GridPattern } from '@echo/ui'
 import { cn } from '@echo/utils'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useEffect, useState, useMemo } from 'react'
@@ -36,16 +36,25 @@ export const LoadingState = ({ fullScreen = false }: LoadingStateProps) => {
     }
   }, [])
 
-  const randomSquares = useMemo(
-    () =>
-      Array.from(
-        { length: Math.floor(Math.random() * 11) + 10 },
-        () =>
-          [
-            Math.floor(Math.random() * 11) + 30,
-            Math.floor(Math.random() * 20) + 0,
-          ] as [number, number]
-      ),
+  // Use deterministic squares to avoid hydration mismatch
+  const squares = useMemo(
+    () => [
+      [30, 0],
+      [31, 1],
+      [32, 2],
+      [33, 3],
+      [34, 4],
+      [35, 5],
+      [36, 6],
+      [37, 7],
+      [38, 8],
+      [39, 9],
+      [40, 10],
+      [41, 11],
+      [42, 12],
+      [43, 13],
+      [44, 14],
+    ] as [number, number][],
     []
   )
 
@@ -61,7 +70,7 @@ export const LoadingState = ({ fullScreen = false }: LoadingStateProps) => {
         height={40}
         className="absolute inset-0 size-full opacity-70 [mask-image:linear-gradient(to_top_left,white,transparent_70%)]"
         strokeDasharray="4 4"
-        squares={randomSquares}
+        squares={squares}
       />
       <motion.div
         initial={{ opacity: 0 }}

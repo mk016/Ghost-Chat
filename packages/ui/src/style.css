@@ -55,6 +55,7 @@
   animation-timeline: auto;
   animation-range-start: normal;
 }
+
 @keyframes fade-in {
   from {
     opacity: 0;

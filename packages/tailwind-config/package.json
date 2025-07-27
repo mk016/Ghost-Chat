@@ -1,16 +1,15 @@
 {
   "name": "@echo/tailwind-config",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./tailwind.config.ts",
+  "types": "./tailwind.config.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
     "./tailwind.config.ts"
   ],
-  "exports": {
-    "./tsConfig": "./tailwind.config.ts"
-  },
+
   "keywords": [],
   "author": "",
   "license": "ISC",

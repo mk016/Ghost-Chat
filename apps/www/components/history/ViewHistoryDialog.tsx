@@ -10,7 +10,7 @@ import { ViewHistoryContent } from './ViewHistoryContent'
 interface ViewHistoryDialogProps {
   roomId: string
   name: string
-  trigger?: React.ReactNode
+  trigger?: any
 }
 
 export function ViewHistoryDialog({

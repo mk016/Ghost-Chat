@@ -1,6 +1,6 @@
 'use client'
 
-import GridPattern from '@echo/ui/components/ui/GridPattern'
+import { GridPattern } from '@echo/ui'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 
@@ -13,7 +13,7 @@ export const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative mx-2 mt-16 space-y-6 overflow-hidden rounded-2xl bg-gradient-to-br from-gray-900 via-black to-gray-800 p-2 py-10 shadow-2xl sm:mx-10 sm:mt-20 sm:space-y-10 sm:p-10 sm:py-20"
+      className="relative mt-16 space-y-6 overflow-hidden rounded-2xl bg-gradient-to-br from-gray-900 via-black to-gray-800 p-2 py-10 shadow-2xl sm:mt-20 sm:space-y-10 sm:p-10 sm:py-20"
     >
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -63,7 +63,7 @@ export const Hero = () => {
           height={40}
           className="absolute inset-0 stroke-gray-600 opacity-30 [mask-image:radial-gradient(900px_circle_at_center,transparent,white)]"
         />
-        <div className="relative z-10 mx-auto max-w-7xl px-2 sm:px-4 lg:px-8">
+        <div className="relative z-10 mx-auto max-w-4xl px-2 sm:px-4 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

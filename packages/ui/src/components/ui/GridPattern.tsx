@@ -1,5 +1,3 @@
-import { useId } from 'react'
-
 import { cn } from '../../utils'
 
 interface GridPatternProps {
@@ -22,7 +20,8 @@ function GridPattern({
   className,
   ...props
 }: GridPatternProps) {
-  const id = useId()
+  // Use a deterministic ID instead of useId to avoid hydration mismatch
+  const id = 'grid-pattern'
 
   return (
     <svg
@@ -52,14 +51,14 @@ function GridPattern({
       <rect width="100%" height="100%" strokeWidth={0} fill={`url(#${id})`} />
       {squares && (
         <svg x={x} y={y} className="overflow-visible">
-          {squares.map(([x, y], index) => (
+          {squares.map(([squareX, squareY], index) => (
             <rect
               strokeWidth="0"
-              key={`${x}-${y}-${index}`}
+              key={`${squareX}-${squareY}-${index}`}
               width={width - 1}
               height={height - 1}
-              x={x * width + 1}
-              y={y * height + 1}
+              x={squareX * width + 1}
+              y={squareY * height + 1}
             />
           ))}
         </svg>
