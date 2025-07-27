@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 const Page = () => {
   return (
     <div className="bg-white">
-      <div className="container px-2 md:px-4 lg:px-8 xl:px-12">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Hero />
         <BentoSection />
         <FeatureCards />
