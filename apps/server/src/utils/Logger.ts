@@ -4,8 +4,8 @@ const { combine, timestamp, json, colorize ,cli} = format
 // Custom format for console logging with colors
 const consoleLogFormat = format.combine(
   format.colorize(),
-  format.printf(({ level, message, timestamp }) => {
-    return `${level}: ${message}`
+  format.printf((info: any) => {
+    return `${info.level}: ${info.message}`
   })
 )
 
