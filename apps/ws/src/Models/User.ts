@@ -217,7 +217,7 @@ export class User {
                           )?.[0]) ||
                         '',
                     })) || []
-                : room.messages.map((msg) => ({
+                : room.messages.map((msg: any) => ({
                     content: msg.content,
                     id: msg.id,
                     ...(msg.image && { image: msg.image }),
@@ -228,7 +228,7 @@ export class User {
                       msg.sender.user?.image || msg.sender.tempUserImage || '',
                     userEmoji:
                       msg.reaction.some(
-                        (r) =>
+                        (r: any) =>
                           r.sender.user?.id === this.id ||
                           r.sender.tempUserId === this.id
                       ) && msg.reaction[0]?.emoji
@@ -241,7 +241,7 @@ export class User {
                           string,
                           { id: string; name: string; avatar: string }[]
                         >,
-                        reaction
+                        reaction: any
                       ) => {
                         if (!reactions[reaction.emoji]) {
                           reactions[reaction.emoji] = []
