@@ -78,9 +78,9 @@ pnpm dev
 ## 📧 Contact
 
 - **Email**: ghost-chat@protonmail.com
-- **GitHub**: [@ghost-chat](https://github.com/ghost-chat)
+- **GitHub**: [@mk016](https://github.com/mk016)
 - **Discord**: [Ghost Chat Community](https://discord.gg/ghost-chat)
-- **Twitter**: [@ghost_chat_app](https://twitter.com/ghost_chat_app)
+- **Twitter**: [@Mk__0168](https://x.com/Mk__0168)
 
 ## 🙋‍♂️ Contributing
 
