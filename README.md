@@ -1,17 +1,16 @@
-# Echo Chat 
+# Ghost Chat App
 
-![echo](https://github.com/user-attachments/assets/47b1d863-4d1e-4ef7-a8bf-fb297f4cccaa)
+![ghost-chat](https://github.com/user-attachments/assets/47b1d863-4d1e-4ef7-a8bf-fb297f4cccaa)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Node.js](https://img.shields.io/badge/Node.js-18%2B-green)](https://nodejs.org/)
 [![PNPM](https://img.shields.io/badge/pnpm-8%2B-orange)](https://pnpm.io/)
 
- <!-- Replace with actual banner image -->
- ![echo-ss](https://github.com/user-attachments/assets/e058afae-c418-4bbc-8b6a-fc45ea6a745b)
+<!-- Replace with actual banner image -->
 
 
-**Real-time chat rooms** for instant collaboration with privacy-first design. No signups, no tracking – just seamless communication.  
-🌐 Live Demo: [https://echo.rsrcraft.me](https://echo.rsrcraft.me)
+**Real-time ghost chat rooms** for instant collaboration with privacy-first design. No signups, no tracking – just seamless communication.  
+🌐 Live Demo: [https://ghost-chat.vercel.app](https://ghost-chat.vercel.app)
 
 ---
 
@@ -19,13 +18,14 @@
 - **🚀 Instant Rooms**: Create/join rooms in 2 clicks  
 - **🔒 Privacy First**: End-to-end encrypted messages  
 - **🕵️‍♂️ Anonymous**: No personal data collected
-
+- **👻 Ghost Mode**: Disappear without a trace
 - **🚀 Real-Time Messaging**: WebSocket-powered live updates  
 - **🔒 SSL Encryption**: Secured conversations with SSL/TLS encryption  
 - **📅 Message History**: Scroll through past chats  
 - **🕹 Custom Controls**: Set user limits & room expiration  
 - **📤 File Sharing**: AWS S3 + CloudFront CDN integration  
 - **🔑 OAuth Login**: Google/GitHub authentication  
+
 ---
 
 ## 🛠 Tech Stack
@@ -54,11 +54,11 @@
 - PNPM v8+
 - PostgreSQL & Redis
 - AWS CLI configured
- ```bash
 
+```bash
 # 1. Clone repository
-git clone https://github.com/mk016/Ghost-Chat.git
-cd Echo-Chat
+git clone https://github.com/mk016/ghost-chat-app.git
+cd ghost-chat-app
 
 # 2. Install dependencies
 pnpm install
@@ -74,5 +74,47 @@ npx prisma migrate dev
 # 5. Start development servers
 pnpm dev
 ```
+
+## 📧 Contact
+
+- **Email**: ghost-chat@protonmail.com
+- **GitHub**: [@mk016](https://github.com/mk016)
+- **Discord**: [Ghost Chat Community](https://discord.gg/ghost-chat)
+- **Twitter**: [@Mk__0168](https://x.com/Mk__0168)
+
 ## 🙋‍♂️ Contributing
-We welcome contributions!
+
+We welcome contributions from the community! Please read our [Contributing Guidelines](CONTRIBUTING.md) before submitting a pull request.
+
+### How to Contribute
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🤝 Support
+
+If you find this project helpful, please consider:
+
+- ⭐ Starring the repository
+- 🐛 Reporting bugs
+- 💡 Suggesting new features
+- 📖 Improving documentation
+
+## 🔒 Privacy
+
+Ghost Chat is built with privacy in mind:
+- No user data collection
+- End-to-end encryption
+- Anonymous by default
+- Open source for transparency
+
+---
+
+**Made with ❤️ by the Ghost Chat Team**
