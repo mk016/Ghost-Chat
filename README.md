@@ -1,4 +1,4 @@
-# Echo Chat 
+# Ghost Chat 
 
 ![echo](https://github.com/user-attachments/assets/47b1d863-4d1e-4ef7-a8bf-fb297f4cccaa)
 
