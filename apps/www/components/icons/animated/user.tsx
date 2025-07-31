@@ -31,7 +31,7 @@ interface UserIconProps {
   className?: string
 }
 
-const UserIcon = ({ animate, className }: UserIconProps) => {
+const UserIcon = ({ animate = false, className = '' }: UserIconProps) => {
   const controls = useAnimation()
 
   useEffect(() => {
@@ -43,37 +43,35 @@ const UserIcon = ({ animate, className }: UserIconProps) => {
   }, [animate, controls])
 
   return (
-    <div className="flex items-center justify-center">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className={className}
-      >
-        <motion.circle
-          cx="12"
-          cy="8"
-          r="5"
-          animate={controls}
-          variants={circleVariant}
-        />
-        <motion.path
-          d="M20 21a8 8 0 0 0-16 0"
-          variants={pathVariant}
-          transition={{
-            delay: 0.2,
-            duration: 0.4,
-          }}
-          animate={controls}
-        />
-      </svg>
-    </div>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+    >
+      <motion.circle
+        cx="12"
+        cy="8"
+        r="5"
+        animate={controls}
+        variants={circleVariant}
+      />
+      <motion.path
+        d="M20 21a8 8 0 0 0-16 0"
+        variants={pathVariant}
+        transition={{
+          delay: 0.2,
+          duration: 0.4,
+        }}
+        animate={controls}
+      />
+    </svg>
   )
 }
 

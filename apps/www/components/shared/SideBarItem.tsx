@@ -24,10 +24,12 @@ const SideBarItem = ({ icon, title, url }: Props) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {React.cloneElement(icon as React.ReactElement, {
-        animate: isHovered,
-        className: `size-4 ${isActive ? 'stroke-blue-600 ' : 'stroke-[#525252]'}`,
-      })}
+      <div className={`size-4 ${isActive ? 'stroke-blue-600 ' : 'stroke-[#525252]'}`}>
+        {React.cloneElement(icon as React.ReactElement, {
+          animate: isHovered,
+          className: "w-full h-full",
+        })}
+      </div>
       <span
         className={` ${isActive ? 'font-medium text-blue-600' : 'font-medium'}`}
       >

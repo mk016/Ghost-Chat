@@ -28,11 +28,11 @@ export default async function LoginPage({
     : undefined
 
   return (
-    <div className="gridGradient container h-screen w-screen">
-      <div className="py-10">
+    <div className="gridGradient min-h-screen w-full flex flex-col items-center justify-center px-4">
+      <div className="mb-8">
         <GhostLogo />
       </div>
-      <div className="flex-center w-full py-10">
+      <div className="w-full max-w-md">
         <LoginCard error={errorMessage} />
       </div>
     </div>

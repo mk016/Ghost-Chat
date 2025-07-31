@@ -60,7 +60,7 @@ const LoginCard = ({ error }: LoginCardProps) => {
   })
 
   return (
-    <div className="flex aspect-square w-full max-w-[400px] flex-col justify-between rounded-2xl border bg-white p-8 shadow-2xl shadow-cyan-500/20">
+    <div className="flex w-full max-w-[400px] flex-col justify-between rounded-2xl border bg-white p-8 shadow-2xl shadow-cyan-500/20">
       <AuthHeader
         title="Welcome back"
         description="Please enter your details to sign in."
