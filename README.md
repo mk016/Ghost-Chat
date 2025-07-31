@@ -7,7 +7,7 @@
 [![PNPM](https://img.shields.io/badge/pnpm-8%2B-orange)](https://pnpm.io/)
 
 <!-- Replace with actual banner image -->
-![ghost-chat-ss](https://github.com/user-attachments/assets/e058afae-c418-4bbc-8b6a-fc45ea6a745b)
+
 
 **Real-time ghost chat rooms** for instant collaboration with privacy-first design. No signups, no tracking – just seamless communication.  
 🌐 Live Demo: [https://ghost-chat.vercel.app](https://ghost-chat.vercel.app)
